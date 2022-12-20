@@ -2,11 +2,10 @@
 
 ```mermaid
 graph TD;
-    A-->Components & Data-binding;
-    B-->Directives;
-    C-->Service & Dependency-Injection;
-    D-->Routing;
-    E-->Observables;
-    F-->Forms;
-    G-->Pipes;
+    Components & Data-binding-->Directives;
+    Directives-->Service & Dependency-Injection;
+    Service & Dependency-Injection-->Routing;
+    Routing-->Observables;
+    Observables-->Forms;
+    Forms-->Pipes;
 ```
